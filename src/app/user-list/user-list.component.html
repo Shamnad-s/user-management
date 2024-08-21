@@ -1,0 +1,15 @@
+<div class="user-list-container">
+    <h2>Registered Users</h2>
+    <ul>
+      <li *ngFor="let user of users">
+        {{ user.firstName }} {{ user.lastName }} - {{ user.role }}
+        <!-- <button 
+          (click)="toggleBlockUser(user)" 
+          class="block-btn">
+          {{ user.blocked ? 'Unblock' : 'Block' }}
+        </button> -->
+      </li>
+    </ul>
+    <button (click)="logout()" class="logout-btn">Logout</button>
+  </div>
+  
